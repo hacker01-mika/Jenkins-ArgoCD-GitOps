@@ -24,7 +24,7 @@ pipeline {
 		stage('Build Docker Image'){
 			steps {
 				script {
-					echo 'building docker image...'
+					echo 'building docker iimage...'
 					docker.build("${DOCKER_HUB_REPO}:latest")
 					
 				}
