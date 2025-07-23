@@ -8,7 +8,7 @@ pipeline {
 	environment {
 		DOCKER_HUB_REPO = 'michaelkakingo/cicd'
 		DOCKER_TLS_VERIFY = ""
-		DOCKER_HOST = 'tcp://localhost:2375'
+		DOCKER_HOST = 'unix:///var/run/docker.sock'
 	}
 	stages {
 		stage('Checkout Github'){
